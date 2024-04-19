@@ -139,7 +139,7 @@ Item {
     Image {
         id: basicImage
         visible: root.state === "login"
-        source: "/usr/share/sddm/themes/genshin-sddm-theme/1.png" 
+        source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/1.png" 
         width: Math.min(parent.width, sourceSize.width)
         height: sourceSize.height * (width / sourceSize.width)
         anchors.horizontalCenter: parent.horizontalCenter

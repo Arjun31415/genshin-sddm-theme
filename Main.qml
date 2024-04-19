@@ -41,8 +41,8 @@ function changeSong(direction) {
         currentSongIndex = 0;
     }
 
-    musicPlayer.source = "/usr/share/sddm/themes/genshin-sddm-theme/sounds/" + songList[currentSongIndex];
-    console.log("/usr/share/sddm/themes/genshin-sddm-theme/sounds/" + songList[currentSongIndex]);
+    musicPlayer.source = "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/sounds/" + songList[currentSongIndex];
+    console.log("/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/sounds/" + songList[currentSongIndex]);
     console.log(currentSongIndex);
 }
 
@@ -67,7 +67,7 @@ function changeSong(direction) {
         height: parent.height
         width: parent.width
         fillMode: Image.PreserveAspectCrop
-        source: "/usr/share/sddm/themes/genshin-sddm-theme/backgrounds/bg.png"
+        source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/backgrounds/bg.png"
         asynchronous: false
         cache: true
         mipmap: true
@@ -79,7 +79,7 @@ function changeSong(direction) {
 	
     MediaPlayer {
     id: musicPlayer
-    source: "/usr/share/sddm/themes/genshin-sddm-theme/sounds/snow_buried_tales.mp3"
+    source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/sounds/snow_buried_tales.mp3"
     volume: 1.0
     muted: false
     autoPlay: true
@@ -93,7 +93,7 @@ function changeSong(direction) {
 
     MediaPlayer {
         id: videoPlayer1
-        source: "/usr/share/sddm/themes/genshin-sddm-theme/backgrounds/" + getTimeOfDay() + "bg.mp4"
+        source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/backgrounds/" + getTimeOfDay() + "bg.mp4"
         autoPlay: true
         muted: true
 		volume: 1.0
@@ -103,14 +103,14 @@ function changeSong(direction) {
 
     MediaPlayer {
         id: videoPlayer2
-        source: "/usr/share/sddm/themes/genshin-sddm-theme/backgrounds/doorbg/" + getTimeOfDay() + "door.webm"
+        source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/backgrounds/doorbg/" + getTimeOfDay() + "door.webm"
         autoPlay: false
         muted: true
     }
 
     MediaPlayer {
         id: videoPlayer3
-        source: "/usr/share/sddm/themes/genshin-sddm-theme/backgrounds/loading.mp4"
+        source: "/run/current-system/sw/share/sddm/themes/genshin-sddm-theme/backgrounds/loading.mp4"
         autoPlay: false
         muted: true
     }	
